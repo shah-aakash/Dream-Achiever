@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  GoalStructure.swift
 //  Dream Achiever
 //
 //  Created by Aakash Shah on 19/07/19.
@@ -8,7 +8,10 @@
 
 import UIKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window: UIWindow?
+
+struct Goal {
+    let name: String?
 }
+
+let goal = Goal(name: "Do something")
+

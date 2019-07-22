@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qHE-fW-vd7">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dream_Achiever" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MzO-OI-TpT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="3Ui-Iq-fIV">
+                                <rect key="frame" x="16" y="104" width="382" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Todays Goal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eoh-yh-Efd">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="27"/>
+                                        <color key="textColor" red="0.99215686274509807" green="0.43529411764705883" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CkG-ds-1ge">
+                                        <rect key="frame" x="0.0" y="75" width="382" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" placeholder="YES" id="aOS-a0-4HB"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYc-Al-XQd">
+                                        <rect key="frame" x="0.0" y="160" width="382" height="40"/>
+                                        <color key="backgroundColor" red="0.99215686270000003" green="0.43529411759999997" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="9mZ-rf-AHr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.99215686270000003" green="0.43529411759999997" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cCB-5u-QXv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="CkG-ds-1ge" secondAttribute="trailing" id="Cd0-sW-ZPJ"/>
+                                    <constraint firstItem="CkG-ds-1ge" firstAttribute="top" secondItem="3Ui-Iq-fIV" secondAttribute="top" constant="75" id="N8o-fn-0Le"/>
+                                    <constraint firstItem="CkG-ds-1ge" firstAttribute="leading" secondItem="3Ui-Iq-fIV" secondAttribute="leading" id="syu-zC-iqM"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18431372549019609" green="0.1803921568627451" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Ui-Iq-fIV" firstAttribute="leading" secondItem="jd6-3C-UBe" secondAttribute="leading" constant="16" id="5ZD-hM-yC3"/>
+                            <constraint firstItem="3Ui-Iq-fIV" firstAttribute="trailing" secondItem="jd6-3C-UBe" secondAttribute="trailing" constant="-16" id="OiS-78-D9n"/>
+                            <constraint firstItem="3Ui-Iq-fIV" firstAttribute="top" secondItem="jd6-3C-UBe" secondAttribute="top" constant="16" id="T82-dD-jv2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jd6-3C-UBe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MCv-0P-Vjg" colorLabel="IBBuiltInLabel-Red"/>
+                    <connections>
+                        <outlet property="InnerStackView" destination="CkG-ds-1ge" id="pFF-hR-ZWb"/>
+                        <outlet property="submitButton" destination="YYc-Al-XQd" id="ukA-tk-Vds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956.52173913043487" y="744.64285714285711"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="5dh-bl-e7W">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="bkF-rH-40d" customClass="DetailViewController" customModule="Dream_Achiever" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ImP-Ap-sCg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="BIL-iO-VSz">
+                                <rect key="frame" x="16" y="60" width="382" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Have Must Have to Achieve This GOALS Today " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94T-be-ahz">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18431372549019609" green="0.1803921568627451" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BIL-iO-VSz" firstAttribute="top" secondItem="caQ-0d-YrB" secondAttribute="top" constant="16" id="59d-Ba-cNa"/>
+                            <constraint firstItem="BIL-iO-VSz" firstAttribute="leading" secondItem="caQ-0d-YrB" secondAttribute="leading" constant="16" id="XJU-yI-6WI"/>
+                            <constraint firstItem="BIL-iO-VSz" firstAttribute="trailing" secondItem="caQ-0d-YrB" secondAttribute="trailing" constant="-16" id="fmb-sZ-pr2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="caQ-0d-YrB"/>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="BIL-iO-VSz" id="1eW-fq-rMm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m3t-H4-uoa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1769.5652173913045" y="744.64285714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e96-g3-S6c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qHE-fW-vd7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KUa-PL-Gx8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zEo-0Z-hxv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUP-7t-XAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="744.64285714285711"/>
+        </scene>
+    </scenes>
+</document>
