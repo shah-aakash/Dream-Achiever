@@ -27,7 +27,7 @@
                                         <color key="textColor" red="0.99215686274509807" green="0.43529411764705883" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CkG-ds-1ge">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CkG-ds-1ge" userLabel="InnerStackView">
                                         <rect key="frame" x="0.0" y="75" width="382" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" placeholder="YES" id="aOS-a0-4HB"/>
@@ -66,7 +66,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="MCv-0P-Vjg" colorLabel="IBBuiltInLabel-Red"/>
                     <connections>
-                        <outlet property="InnerStackView" destination="CkG-ds-1ge" id="pFF-hR-ZWb"/>
+                        <outlet property="innerStackView" destination="CkG-ds-1ge" id="39o-au-HEe"/>
                         <outlet property="submitButton" destination="YYc-Al-XQd" id="ukA-tk-Vds"/>
                     </connections>
                 </viewController>
